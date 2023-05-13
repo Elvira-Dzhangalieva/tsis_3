@@ -1,14 +1,15 @@
-def IsPrime(num):
-    if num == 0 or num == 1:
+def is_prime(n):
+    """
+    Функция проверяет, является ли число простым.
+    """
+    if n <= 1:
         return False
-    cnt = True
-    for i in range(2, num):
-        if(num % 2 == 0):
-            cnt = False 
-    if(cnt):
-        return True 
-    else:
-        return False 
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+
+    return True 
     
 def filter_prime(all_num):
     prime_num = list()
