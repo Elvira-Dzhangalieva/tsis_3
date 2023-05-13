@@ -1,4 +1,4 @@
-def is_prime(n):
+def IsPrime(n):
     """
     Функция проверяет, является ли число простым.
     """
@@ -16,7 +16,7 @@ def filter_prime(all_num):
     for i in all_num:
         if(IsPrime(i)):
             prime_num.append(i)
-    return prime_num
+    return prime_num  
 
 
 size_list = int(input())
